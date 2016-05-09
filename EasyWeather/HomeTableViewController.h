@@ -9,17 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "HomeTableViewCell.h"
 #import "Header.h"
-#import "WeatherService.h"
-#import "DailyService.h"
-#import "WeatherDTO.h"
+#import "DailyAPI.h"
+#import "WeatherModel.h"
 
 @interface HomeTableViewController : UITableViewController
 
-@property (nonatomic) DailyService *dailyService;
+@property (nonatomic) DailyAPI *dailyAPI;
 @property (nonatomic) NSMutableArray *listCityID;
 @property (nonatomic) NSMutableArray *weatherSection;
 
 - (void)loadData;
-- (void)fetchNewDataWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
 
 @end

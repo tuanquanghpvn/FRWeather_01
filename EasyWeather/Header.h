@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DailyModel.h"
 
 @interface Header : UITableViewHeaderFooterView
 
 @property (weak, nonatomic) IBOutlet UILabel *lblCityName;
 
+- (void)setData:(DailyModel *)dailyModel;
 
 @end

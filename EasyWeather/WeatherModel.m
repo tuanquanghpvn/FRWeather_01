@@ -1,19 +1,19 @@
 //
-//  WeatherDTO.m
+//  WeatherModel.m
 //  EasyWeather
 //
-//  Created by  on 5/5/16.
+//  Created by  on 5/9/16.
 //  Copyright © 2016 Tuan_Quang. All rights reserved.
 //
 
-#import "WeatherDTO.h"
+#import "WeatherModel.h"
 
-@implementation WeatherDTO
+@implementation WeatherModel
 
 - (instancetype)init:(NSDictionary *)jsonData {
     self = [super init];
     if (self != nil) {
-        WeatherDTO *weather = self;
+        WeatherModel *weather = self;
         
         NSDictionary* weather_first = [[jsonData objectForKey:@"weather"] objectAtIndex:0];
         weather.weatherID = [weather_first objectForKey:@"id"];

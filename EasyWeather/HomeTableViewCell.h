@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WeatherModel.h"
 
 @interface HomeTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *lblDay;
 @property (weak, nonatomic) IBOutlet UILabel *lblStatus;
+
+- (void)setCellData:(WeatherModel *)weatherModel;
 
 @end

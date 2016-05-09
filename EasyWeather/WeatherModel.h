@@ -1,14 +1,14 @@
 //
-//  WeatherDTO.h
+//  WeatherModel.h
 //  EasyWeather
 //
-//  Created by  on 5/5/16.
+//  Created by  on 5/9/16.
 //  Copyright © 2016 Tuan_Quang. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface WeatherDTO : NSObject
+@interface WeatherModel : NSObject
 
 @property (nonatomic) NSString *weatherID;
 @property (nonatomic) NSString *weatherName;

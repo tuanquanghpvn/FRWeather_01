@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "HomeTableViewController.h"
+#import "FacebookService.h"
 
 
 @interface LoginViewController : UIViewController
+
+@property (nonatomic) FacebookService* facebookService;
 
 @end

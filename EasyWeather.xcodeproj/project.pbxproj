@@ -18,11 +18,14 @@
 		0D6D01941CD9F058009E942E /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D01931CD9F058009E942E /* HomeTableViewCell.m */; };
 		0D6D01A01CDA1234009E942E /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D019F1CDA1234009E942E /* Header.m */; };
 		0D750FF31CDC2DA600C4FED5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D750FF21CDC2DA600C4FED5 /* LoginViewController.m */; };
-		0DBD33C91CDAE89300180603 /* DailyDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD33C81CDAE89300180603 /* DailyDTO.m */; };
-		0DBD33D21CDAE8F200180603 /* DailyService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD33D11CDAE8F200180603 /* DailyService.m */; };
-		0DBD33D91CDAF1CC00180603 /* WeatherDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD33D81CDAF1CC00180603 /* WeatherDTO.m */; };
-		0DBD33DF1CDAF29D00180603 /* WeatherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD33DE1CDAF29D00180603 /* WeatherService.m */; };
-		0DBD33E31CDAF37600180603 /* AFConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD33E21CDAF37600180603 /* AFConfig.m */; };
+		0DD7BF5B1CE0489300CB7CA3 /* Hour.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD7BF5A1CE0489300CB7CA3 /* Hour.xib */; };
+		0DD7BF5E1CE05EAE00CB7CA3 /* Hour.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF5D1CE05EAE00CB7CA3 /* Hour.m */; };
+		0DD7BF6A1CE064F900CB7CA3 /* PushNotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF691CE064F900CB7CA3 /* PushNotificationService.m */; };
+		0DD7BF6D1CE0651C00CB7CA3 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF6C1CE0651C00CB7CA3 /* NetworkService.m */; };
+		0DD7BF701CE0652D00CB7CA3 /* FacebookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF6F1CE0652D00CB7CA3 /* FacebookService.m */; };
+		0DD7BF741CE0788800CB7CA3 /* DailyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF731CE0788800CB7CA3 /* DailyAPI.m */; };
+		0DD7BF771CE07A7600CB7CA3 /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF761CE07A7600CB7CA3 /* WeatherModel.m */; };
+		0DD7BF7A1CE07ABD00CB7CA3 /* DailyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF791CE07ABD00CB7CA3 /* DailyModel.m */; };
 		0DF170291CDC47DB005D1233 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF170261CDC47DB005D1233 /* FBSDKCoreKit.framework */; };
 		0DF1702A1CDC47DB005D1233 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF170271CDC47DB005D1233 /* FBSDKLoginKit.framework */; };
 		0DF1702B1CDC47DB005D1233 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF170281CDC47DB005D1233 /* FBSDKShareKit.framework */; };
@@ -69,16 +72,22 @@
 		0D6D019F1CDA1234009E942E /* Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
 		0D750FF11CDC2DA600C4FED5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0D750FF21CDC2DA600C4FED5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		0DBD33C71CDAE89300180603 /* DailyDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyDTO.h; sourceTree = "<group>"; };
-		0DBD33C81CDAE89300180603 /* DailyDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyDTO.m; sourceTree = "<group>"; };
-		0DBD33D01CDAE8F200180603 /* DailyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyService.h; sourceTree = "<group>"; };
-		0DBD33D11CDAE8F200180603 /* DailyService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyService.m; sourceTree = "<group>"; };
-		0DBD33D71CDAF1CC00180603 /* WeatherDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDTO.h; sourceTree = "<group>"; };
-		0DBD33D81CDAF1CC00180603 /* WeatherDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDTO.m; sourceTree = "<group>"; };
-		0DBD33DD1CDAF29D00180603 /* WeatherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherService.h; sourceTree = "<group>"; };
-		0DBD33DE1CDAF29D00180603 /* WeatherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherService.m; sourceTree = "<group>"; };
-		0DBD33E11CDAF37600180603 /* AFConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFConfig.h; sourceTree = "<group>"; };
-		0DBD33E21CDAF37600180603 /* AFConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFConfig.m; sourceTree = "<group>"; };
+		0DD7BF5A1CE0489300CB7CA3 /* Hour.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Hour.xib; sourceTree = "<group>"; };
+		0DD7BF5C1CE05EAE00CB7CA3 /* Hour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hour.h; sourceTree = "<group>"; };
+		0DD7BF5D1CE05EAE00CB7CA3 /* Hour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hour.m; sourceTree = "<group>"; };
+		0DD7BF681CE064F900CB7CA3 /* PushNotificationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationService.h; sourceTree = "<group>"; };
+		0DD7BF691CE064F900CB7CA3 /* PushNotificationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationService.m; sourceTree = "<group>"; };
+		0DD7BF6B1CE0651C00CB7CA3 /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		0DD7BF6C1CE0651C00CB7CA3 /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		0DD7BF6E1CE0652D00CB7CA3 /* FacebookService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookService.h; sourceTree = "<group>"; };
+		0DD7BF6F1CE0652D00CB7CA3 /* FacebookService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookService.m; sourceTree = "<group>"; };
+		0DD7BF711CE0661400CB7CA3 /* GlobalConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConfig.h; sourceTree = "<group>"; };
+		0DD7BF721CE0788800CB7CA3 /* DailyAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyAPI.h; sourceTree = "<group>"; };
+		0DD7BF731CE0788800CB7CA3 /* DailyAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyAPI.m; sourceTree = "<group>"; };
+		0DD7BF751CE07A7600CB7CA3 /* WeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherModel.h; sourceTree = "<group>"; };
+		0DD7BF761CE07A7600CB7CA3 /* WeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherModel.m; sourceTree = "<group>"; };
+		0DD7BF781CE07ABD00CB7CA3 /* DailyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyModel.h; sourceTree = "<group>"; };
+		0DD7BF791CE07ABD00CB7CA3 /* DailyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyModel.m; sourceTree = "<group>"; };
 		0DF170261CDC47DB005D1233 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		0DF170271CDC47DB005D1233 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		0DF170281CDC47DB005D1233 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -119,28 +128,14 @@
 		0D4A4B191CDB42F70024D5C2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0D4A4B1B1CDB433E0024D5C2 /* Daily */,
-				0D4A4B1A1CDB43360024D5C2 /* Weather */,
+				0DD7BF681CE064F900CB7CA3 /* PushNotificationService.h */,
+				0DD7BF691CE064F900CB7CA3 /* PushNotificationService.m */,
+				0DD7BF6B1CE0651C00CB7CA3 /* NetworkService.h */,
+				0DD7BF6C1CE0651C00CB7CA3 /* NetworkService.m */,
+				0DD7BF6E1CE0652D00CB7CA3 /* FacebookService.h */,
+				0DD7BF6F1CE0652D00CB7CA3 /* FacebookService.m */,
 			);
 			name = Services;
-			sourceTree = "<group>";
-		};
-		0D4A4B1A1CDB43360024D5C2 /* Weather */ = {
-			isa = PBXGroup;
-			children = (
-				0DBD33DD1CDAF29D00180603 /* WeatherService.h */,
-				0DBD33DE1CDAF29D00180603 /* WeatherService.m */,
-			);
-			name = Weather;
-			sourceTree = "<group>";
-		};
-		0D4A4B1B1CDB433E0024D5C2 /* Daily */ = {
-			isa = PBXGroup;
-			children = (
-				0DBD33D01CDAE8F200180603 /* DailyService.h */,
-				0DBD33D11CDAE8F200180603 /* DailyService.m */,
-			);
-			name = Daily;
 			sourceTree = "<group>";
 		};
 		0D69B69F1CDAE3EF0039143E /* Models */ = {
@@ -177,6 +172,7 @@
 		0D6D01541CD9E3B2009E942E /* EasyWeather */ = {
 			isa = PBXGroup;
 			children = (
+				0DD7BF631CE0649F00CB7CA3 /* API */,
 				0D4A4B191CDB42F70024D5C2 /* Services */,
 				0DBD33E01CDAF35600180603 /* Config */,
 				0D69B69F1CDAE3EF0039143E /* Models */,
@@ -222,25 +218,28 @@
 				0D750FF01CDC2D8400C4FED5 /* Login */,
 				0D6D015E1CD9E3B2009E942E /* Main.storyboard */,
 				0D6D01981CDA00CA009E942E /* Home */,
-				0D6D01911CD9EF4D009E942E /* Child */,
 			);
 			name = UI;
 			sourceTree = "<group>";
 		};
-		0D6D01911CD9EF4D009E942E /* Child */ = {
+		0D6D01911CD9EF4D009E942E /* HeaderFooter */ = {
 			isa = PBXGroup;
 			children = (
 				0D6D018C1CD9EB39009E942E /* Header.xib */,
 				0D6D019E1CDA1234009E942E /* Header.h */,
 				0D6D019F1CDA1234009E942E /* Header.m */,
+				0DD7BF5A1CE0489300CB7CA3 /* Hour.xib */,
+				0DD7BF5C1CE05EAE00CB7CA3 /* Hour.h */,
+				0DD7BF5D1CE05EAE00CB7CA3 /* Hour.m */,
 			);
-			name = Child;
+			name = HeaderFooter;
 			sourceTree = "<group>";
 		};
 		0D6D01981CDA00CA009E942E /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				0DD985C71CDCA4300094ADF8 /* Cell */,
+				0D6D01911CD9EF4D009E942E /* HeaderFooter */,
+				0DD985C71CDCA4300094ADF8 /* TableViewCell */,
 				0D6D01891CD9E5A3009E942E /* HomeTableViewController.h */,
 				0D6D018A1CD9E5A3009E942E /* HomeTableViewController.m */,
 			);
@@ -259,8 +258,8 @@
 		0DBD33C51CDAE84100180603 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				0DBD33D71CDAF1CC00180603 /* WeatherDTO.h */,
-				0DBD33D81CDAF1CC00180603 /* WeatherDTO.m */,
+				0DD7BF751CE07A7600CB7CA3 /* WeatherModel.h */,
+				0DD7BF761CE07A7600CB7CA3 /* WeatherModel.m */,
 			);
 			name = Weather;
 			sourceTree = "<group>";
@@ -268,8 +267,8 @@
 		0DBD33C61CDAE85800180603 /* Daily */ = {
 			isa = PBXGroup;
 			children = (
-				0DBD33C71CDAE89300180603 /* DailyDTO.h */,
-				0DBD33C81CDAE89300180603 /* DailyDTO.m */,
+				0DD7BF781CE07ABD00CB7CA3 /* DailyModel.h */,
+				0DD7BF791CE07ABD00CB7CA3 /* DailyModel.m */,
 			);
 			name = Daily;
 			sourceTree = "<group>";
@@ -277,19 +276,27 @@
 		0DBD33E01CDAF35600180603 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				0DBD33E11CDAF37600180603 /* AFConfig.h */,
-				0DBD33E21CDAF37600180603 /* AFConfig.m */,
+				0DD7BF711CE0661400CB7CA3 /* GlobalConfig.h */,
 			);
 			name = Config;
 			sourceTree = "<group>";
 		};
-		0DD985C71CDCA4300094ADF8 /* Cell */ = {
+		0DD7BF631CE0649F00CB7CA3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0DD7BF721CE0788800CB7CA3 /* DailyAPI.h */,
+				0DD7BF731CE0788800CB7CA3 /* DailyAPI.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		0DD985C71CDCA4300094ADF8 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				0D6D01921CD9F058009E942E /* HomeTableViewCell.h */,
 				0D6D01931CD9F058009E942E /* HomeTableViewCell.m */,
 			);
-			name = Cell;
+			name = TableViewCell;
 			sourceTree = "<group>";
 		};
 		2022537A14323BEDEE58AEF7 /* Pods */ = {
@@ -429,6 +436,7 @@
 				0D6D01621CD9E3B2009E942E /* Assets.xcassets in Resources */,
 				0D6D018D1CD9EB39009E942E /* Header.xib in Resources */,
 				0D6D01601CD9E3B2009E942E /* Main.storyboard in Resources */,
+				0DD7BF5B1CE0489300CB7CA3 /* Hour.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,17 +509,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DBD33DF1CDAF29D00180603 /* WeatherService.m in Sources */,
-				0DBD33D91CDAF1CC00180603 /* WeatherDTO.m in Sources */,
-				0DBD33E31CDAF37600180603 /* AFConfig.m in Sources */,
+				0DD7BF7A1CE07ABD00CB7CA3 /* DailyModel.m in Sources */,
+				0DD7BF741CE0788800CB7CA3 /* DailyAPI.m in Sources */,
+				0DD7BF701CE0652D00CB7CA3 /* FacebookService.m in Sources */,
+				0DD7BF5E1CE05EAE00CB7CA3 /* Hour.m in Sources */,
 				0D6D015A1CD9E3B2009E942E /* AppDelegate.m in Sources */,
-				0DBD33D21CDAE8F200180603 /* DailyService.m in Sources */,
+				0DD7BF6A1CE064F900CB7CA3 /* PushNotificationService.m in Sources */,
 				0D6D01941CD9F058009E942E /* HomeTableViewCell.m in Sources */,
 				0D6D018B1CD9E5A3009E942E /* HomeTableViewController.m in Sources */,
 				0D6D01571CD9E3B2009E942E /* main.m in Sources */,
 				0D6D01A01CDA1234009E942E /* Header.m in Sources */,
 				0D750FF31CDC2DA600C4FED5 /* LoginViewController.m in Sources */,
-				0DBD33C91CDAE89300180603 /* DailyDTO.m in Sources */,
+				0DD7BF6D1CE0651C00CB7CA3 /* NetworkService.m in Sources */,
+				0DD7BF771CE07A7600CB7CA3 /* WeatherModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

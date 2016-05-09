@@ -22,7 +22,7 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"Header" bundle:nil] forHeaderFooterViewReuseIdentifier:@"Header"];
     
     // Init
-    self.dailyService = [DailyService new];
+    self.dailyAPI = [DailyAPI new];
     self.listCityID = [NSMutableArray new];
     self.weatherSection = [NSMutableArray new];
     
@@ -43,7 +43,7 @@
 
     for (NSString *cityID in listCityID) {
         // Call Service Load Weather Daily
-        [self.dailyService getDailyWeather:cityID complete:^(BOOL isLogged, DailyDTO *dailyDTO) {
+        [self.dailyAPI getDailyWeather:cityID complete:^(BOOL isLogged, DailyModel *dailyDTO) {
             [self.weatherSection addObject:dailyDTO];
             [self.tableView reloadData];
         }];
@@ -60,8 +60,8 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     Header *headerView = (Header *)[self.tableView dequeueReusableHeaderFooterViewWithIdentifier:@"Header"];
     
-    DailyDTO *dailyDTO = [self.weatherSection objectAtIndex:section];
-    headerView.lblCityName.text = dailyDTO.cityName;
+    DailyModel *dailyDTO = [self.weatherSection objectAtIndex:section];
+    [headerView setData:dailyDTO];
     
     return headerView;
 }
@@ -71,13 +71,11 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return [self.weatherSection count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    DailyDTO *currentSection = [self.weatherSection objectAtIndex:section];
+    DailyModel *currentSection = [self.weatherSection objectAtIndex:section];
     return [currentSection.weathers count];
 }
 
@@ -85,15 +83,9 @@
     HomeTableViewCell *cell = (HomeTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"HomeTableViewCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    DailyDTO *dailyDTO = [self.weatherSection objectAtIndex:indexPath.section];
-    WeatherDTO *weatherDTO = [dailyDTO.weathers objectAtIndex:indexPath.row];
-    
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateStyle: NSDateFormatterLongStyle];
-    
-    cell.lblDay.text = [dateFormatter stringFromDate:weatherDTO.dateTime];
-    cell.lblStatus.text = [NSString stringWithFormat:@"%@ - %@", weatherDTO.weatherName, weatherDTO.temp];
-    
+    DailyModel *dailyDTO = [self.weatherSection objectAtIndex:indexPath.section];
+    WeatherModel *weatherDTO = [dailyDTO.weathers objectAtIndex:indexPath.row];
+    [cell setCellData:weatherDTO];
     return cell;
 }
 
