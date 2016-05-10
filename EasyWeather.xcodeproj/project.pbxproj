@@ -174,7 +174,7 @@
 			children = (
 				0DD7BF631CE0649F00CB7CA3 /* API */,
 				0D4A4B191CDB42F70024D5C2 /* Services */,
-				0DBD33E01CDAF35600180603 /* Config */,
+				0DBD33E01CDAF35600180603 /* Configs */,
 				0D69B69F1CDAE3EF0039143E /* Models */,
 				0D6D01581CD9E3B2009E942E /* AppDelegate.h */,
 				0D6D01591CD9E3B2009E942E /* AppDelegate.m */,
@@ -222,7 +222,7 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
-		0D6D01911CD9EF4D009E942E /* HeaderFooter */ = {
+		0D6D01911CD9EF4D009E942E /* Xib */ = {
 			isa = PBXGroup;
 			children = (
 				0D6D018C1CD9EB39009E942E /* Header.xib */,
@@ -232,14 +232,14 @@
 				0DD7BF5C1CE05EAE00CB7CA3 /* Hour.h */,
 				0DD7BF5D1CE05EAE00CB7CA3 /* Hour.m */,
 			);
-			name = HeaderFooter;
+			name = Xib;
 			sourceTree = "<group>";
 		};
 		0D6D01981CDA00CA009E942E /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				0D6D01911CD9EF4D009E942E /* HeaderFooter */,
-				0DD985C71CDCA4300094ADF8 /* TableViewCell */,
+				0D6D01911CD9EF4D009E942E /* Xib */,
+				0DD985C71CDCA4300094ADF8 /* Cell */,
 				0D6D01891CD9E5A3009E942E /* HomeTableViewController.h */,
 				0D6D018A1CD9E5A3009E942E /* HomeTableViewController.m */,
 			);
@@ -273,12 +273,12 @@
 			name = Daily;
 			sourceTree = "<group>";
 		};
-		0DBD33E01CDAF35600180603 /* Config */ = {
+		0DBD33E01CDAF35600180603 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
 				0DD7BF711CE0661400CB7CA3 /* GlobalConfig.h */,
 			);
-			name = Config;
+			name = Configs;
 			sourceTree = "<group>";
 		};
 		0DD7BF631CE0649F00CB7CA3 /* API */ = {
@@ -290,13 +290,13 @@
 			name = API;
 			sourceTree = "<group>";
 		};
-		0DD985C71CDCA4300094ADF8 /* TableViewCell */ = {
+		0DD985C71CDCA4300094ADF8 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				0D6D01921CD9F058009E942E /* HomeTableViewCell.h */,
 				0D6D01931CD9F058009E942E /* HomeTableViewCell.m */,
 			);
-			name = TableViewCell;
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		2022537A14323BEDEE58AEF7 /* Pods */ = {

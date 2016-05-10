@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "DailyModel.h"
+#import "Hour.h"
 
 @interface Header : UITableViewHeaderFooterView
 
 @property (weak, nonatomic) IBOutlet UILabel *lblCityName;
+@property (weak, nonatomic) IBOutlet UIScrollView *scvHour;
 
 - (void)setData:(DailyModel *)dailyModel;
+- (void)loadDataScrollView;
 
 @end

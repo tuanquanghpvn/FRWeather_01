@@ -18,14 +18,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ug8-CM-s8m">
-                    <rect key="frame" x="77" y="0.0" width="298" height="50"/>
+                    <rect key="frame" x="63" y="0.0" width="312" height="50"/>
                 </scrollView>
             </subviews>
             <constraints>
                 <constraint firstItem="xP9-KI-pO5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="D5m-nV-a8I"/>
                 <constraint firstAttribute="bottom" secondItem="ug8-CM-s8m" secondAttribute="bottom" id="VIK-d5-knU"/>
                 <constraint firstItem="xP9-KI-pO5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="YQf-FZ-QG7"/>
-                <constraint firstItem="ug8-CM-s8m" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="77" id="r2A-ru-k24"/>
+                <constraint firstItem="ug8-CM-s8m" firstAttribute="leading" secondItem="xP9-KI-pO5" secondAttribute="trailing" constant="8" id="dkB-rr-7vX"/>
                 <constraint firstAttribute="trailing" secondItem="ug8-CM-s8m" secondAttribute="trailing" id="sCq-Jk-alH"/>
                 <constraint firstItem="ug8-CM-s8m" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zy7-Du-od4"/>
             </constraints>
@@ -33,6 +33,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="lblCityName" destination="xP9-KI-pO5" id="MGo-Lc-qMA"/>
+                <outlet property="scvHour" destination="ug8-CM-s8m" id="uDm-sA-RKO"/>
             </connections>
             <point key="canvasLocation" x="354.5" y="108"/>
         </view>
