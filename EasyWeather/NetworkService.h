@@ -9,11 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFNetworking.h>
 #import "GlobalConfig.h"
+#import "Reachability.h"
 
 @interface NetworkService : NSObject
 
 @property (nonatomic) AFHTTPSessionManager * sessionManager;
 
+- (void)checkNetwork;
 - (void)getData:(BOOL)type url:(NSString *)urlRequest parameter:(NSDictionary *)param complete:(void(^)(NSDictionary *data, NSError *error))handeBlock;
+- (void)processingError:(NSError *)error;
 
 @end

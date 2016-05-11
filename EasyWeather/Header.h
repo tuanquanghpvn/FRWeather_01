@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WeatherModel.h"
 #import "DailyModel.h"
 #import "Hour.h"
 
@@ -16,6 +17,6 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scvHour;
 
 - (void)setData:(DailyModel *)dailyModel;
-- (void)loadDataScrollView;
+- (void)loadDataScrollView:(NSMutableArray *) jsonHour;
 
 @end

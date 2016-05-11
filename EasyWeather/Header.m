@@ -12,28 +12,30 @@
 
 - (void)setData:(DailyModel *)dailyModel {
     self.lblCityName.text = dailyModel.cityName;
-    [self loadDataScrollView];
+    [self loadDataScrollView:dailyModel.hours];
 }
 
-- (void)loadDataScrollView {
-    for (int i=0; i < 8; i++) {
+- (void)loadDataScrollView:(NSMutableArray *) jsonHour {
+    float width = 50;
+    
+    NSUInteger index = 0;
+    for (WeatherModel *weatherModel in jsonHour) {
         Hour *hourView = (Hour *)[[[NSBundle mainBundle] loadNibNamed:@"Hour" owner:self options:nil] lastObject];
+        // Set Frame
+        CGRect frame = hourView.bounds;
+        frame.origin.x = frame.size.width / 1.5 * index;
+        width = width + frame.size.width / 1.5;
+        frame.origin.y = 0;
+        [hourView setFrame:frame];
         
-        hourView.lblHour.text = [NSString stringWithFormat:@"%d", i];
-        hourView.lblStatus.text = @"Sun";
-        hourView.lblTemp.text = @"28";
+        // Set Data
+        [hourView setData:weatherModel];
         
         [self.scvHour addSubview:hourView];
-    
-        CGRect frame;
-        frame.origin.x = self.scvHour.frame.size.width * 2;
-        frame.origin.y = 0;
-        frame.size = self.scvHour.frame.size;
-        
-        [hourView setFrame:frame];
+        index++;
     }
     
-    [self.scvHour setContentSize:CGSizeMake(8 * 25, 25)];
+    [self.scvHour setContentSize:CGSizeMake(width, self.scvHour.bounds.size.height)];
 }
 
 /*

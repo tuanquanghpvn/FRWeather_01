@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D5C8AFF1CE1B3A90025A369 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C8AFE1CE1B3A90025A369 /* Helper.m */; };
+		0D5C8B0A1CE1D6DB0025A369 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5C8B091CE1D6DB0025A369 /* SystemConfiguration.framework */; };
+		0D5C8B0D1CE1D7100025A369 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C8B0C1CE1D7100025A369 /* Reachability.m */; };
 		0D6D01571CD9E3B2009E942E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D01561CD9E3B2009E942E /* main.m */; };
 		0D6D015A1CD9E3B2009E942E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D01591CD9E3B2009E942E /* AppDelegate.m */; };
 		0D6D01601CD9E3B2009E942E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6D015E1CD9E3B2009E942E /* Main.storyboard */; };
@@ -50,6 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D5C8AFD1CE1B3A90025A369 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		0D5C8AFE1CE1B3A90025A369 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		0D5C8B091CE1D6DB0025A369 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0D5C8B0B1CE1D7100025A369 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../../../Downloads/Reachability-master/Reachability.h"; sourceTree = "<group>"; };
+		0D5C8B0C1CE1D7100025A369 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "../../../Downloads/Reachability-master/Reachability.m"; sourceTree = "<group>"; };
 		0D6D01521CD9E3B1009E942E /* EasyWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6D01561CD9E3B2009E942E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D6D01581CD9E3B2009E942E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D5C8B0A1CE1D6DB0025A369 /* SystemConfiguration.framework in Frameworks */,
 				0DF170291CDC47DB005D1233 /* FBSDKCoreKit.framework in Frameworks */,
 				0DF1702A1CDC47DB005D1233 /* FBSDKLoginKit.framework in Frameworks */,
 				0DF1702B1CDC47DB005D1233 /* FBSDKShareKit.framework in Frameworks */,
@@ -138,6 +147,15 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		0D5C8AFC1CE1B2FD0025A369 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				0D5C8AFD1CE1B3A90025A369 /* Helper.h */,
+				0D5C8AFE1CE1B3A90025A369 /* Helper.m */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
 		0D69B69F1CDAE3EF0039143E /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +190,7 @@
 		0D6D01541CD9E3B2009E942E /* EasyWeather */ = {
 			isa = PBXGroup;
 			children = (
+				0D5C8AFC1CE1B2FD0025A369 /* Commons */,
 				0DD7BF631CE0649F00CB7CA3 /* API */,
 				0D4A4B191CDB42F70024D5C2 /* Services */,
 				0DBD33E01CDAF35600180603 /* Configs */,
@@ -311,6 +330,9 @@
 		5C7C1F4B41EB8840F7C347E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D5C8B0B1CE1D7100025A369 /* Reachability.h */,
+				0D5C8B0C1CE1D7100025A369 /* Reachability.m */,
+				0D5C8B091CE1D6DB0025A369 /* SystemConfiguration.framework */,
 				0DF170261CDC47DB005D1233 /* FBSDKCoreKit.framework */,
 				0DF170271CDC47DB005D1233 /* FBSDKLoginKit.framework */,
 				0DF170281CDC47DB005D1233 /* FBSDKShareKit.framework */,
@@ -513,6 +535,7 @@
 				0DD7BF741CE0788800CB7CA3 /* DailyAPI.m in Sources */,
 				0DD7BF701CE0652D00CB7CA3 /* FacebookService.m in Sources */,
 				0DD7BF5E1CE05EAE00CB7CA3 /* Hour.m in Sources */,
+				0D5C8B0D1CE1D7100025A369 /* Reachability.m in Sources */,
 				0D6D015A1CD9E3B2009E942E /* AppDelegate.m in Sources */,
 				0DD7BF6A1CE064F900CB7CA3 /* PushNotificationService.m in Sources */,
 				0D6D01941CD9F058009E942E /* HomeTableViewCell.m in Sources */,
@@ -520,6 +543,7 @@
 				0D6D01571CD9E3B2009E942E /* main.m in Sources */,
 				0D6D01A01CDA1234009E942E /* Header.m in Sources */,
 				0D750FF31CDC2DA600C4FED5 /* LoginViewController.m in Sources */,
+				0D5C8AFF1CE1B3A90025A369 /* Helper.m in Sources */,
 				0DD7BF6D1CE0651C00CB7CA3 /* NetworkService.m in Sources */,
 				0DD7BF771CE07A7600CB7CA3 /* WeatherModel.m in Sources */,
 			);

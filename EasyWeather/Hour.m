@@ -10,6 +10,15 @@
 
 @implementation Hour
 
+- (void)setData:(WeatherModel *) weatherModel {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"HH:mm"];
+    
+    self.lblHour.text = [NSString stringWithFormat:@"%@", [dateFormatter stringFromDate:weatherModel.dateTime]];
+    self.lblStatus.text = weatherModel.weatherName;
+    self.lblTemp.text = weatherModel.temp;
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
