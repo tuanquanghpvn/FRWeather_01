@@ -22,10 +22,22 @@
     NSDictionary *param = @{ @"id": cityID,
                              @"APPID": APP_ID};
     
-    [self.networkService getData:TRUE url:@"forecast/daily" parameter:param complete:^(NSDictionary *data, NSError *error) {
-        // Convert to WeatherDTO
-        DailyModel *daily = [[DailyModel alloc] init:data];
-        completionBlock(YES, daily);
+    [self.networkService getData:TRUE url:URL_DAILY parameter:param complete:^(NSDictionary *data_daily, NSError *error) {
+        
+        NSDate *now = [NSDate date];
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSDateComponents *components = [calendar components:NSCalendarUnitHour fromDate:now];
+        long cnt = (24 - [components hour]) / 3;
+        NSDictionary *param = @{ @"id": cityID,
+                                 @"APPID": APP_ID,
+                                 @"cnt": [NSString stringWithFormat:@"%ld", cnt]};
+        
+        
+        [self.networkService getData:TRUE url:URL_HOUR parameter:param complete:^(NSDictionary *data_hour, NSError *error) {
+            // Convert to WeatherDTO
+            DailyModel *daily = [[DailyModel alloc] init:data_daily hour:data_hour];
+            completionBlock(YES, daily);
+        }];
     }];
 }
 

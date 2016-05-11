@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblStatus;
 
 - (void)setCellData:(WeatherModel *)weatherModel;
+- (void)prepareForReuse;
 
 @end

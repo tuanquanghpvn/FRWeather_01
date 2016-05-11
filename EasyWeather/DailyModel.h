@@ -18,7 +18,8 @@
 @property (nonatomic) NSString *lat;
 
 @property (nonatomic) NSMutableArray *weathers;
+@property (nonatomic) NSMutableArray *hours;
 
-- (instancetype)init:(NSDictionary *)jsonData;
+- (instancetype)init:(NSDictionary *)jsonDaily hour:(NSDictionary *)jsonHour;
 
 @end

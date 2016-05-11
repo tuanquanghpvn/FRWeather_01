@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WeatherModel.h"
 
 @interface Hour : UIView
 
 @property (weak, nonatomic) IBOutlet UILabel *lblHour;
 @property (weak, nonatomic) IBOutlet UILabel *lblStatus;
 @property (weak, nonatomic) IBOutlet UILabel *lblTemp;
+
+- (void)setData:(WeatherModel *) weatherModel;
 
 @end
