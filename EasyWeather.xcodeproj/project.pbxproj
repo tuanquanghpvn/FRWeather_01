@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D5C8AFF1CE1B3A90025A369 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C8AFE1CE1B3A90025A369 /* Helper.m */; };
 		0D5C8B0A1CE1D6DB0025A369 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5C8B091CE1D6DB0025A369 /* SystemConfiguration.framework */; };
 		0D5C8B0D1CE1D7100025A369 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C8B0C1CE1D7100025A369 /* Reachability.m */; };
 		0D6D01571CD9E3B2009E942E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D01561CD9E3B2009E942E /* main.m */; };
@@ -20,6 +19,7 @@
 		0D6D018D1CD9EB39009E942E /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D6D018C1CD9EB39009E942E /* Header.xib */; };
 		0D6D01941CD9F058009E942E /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D01931CD9F058009E942E /* HomeTableViewCell.m */; };
 		0D6D01A01CDA1234009E942E /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D019F1CDA1234009E942E /* Header.m */; };
+		0D6DE8301CE31DD000E84CBC /* NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6DE82F1CE31DD000E84CBC /* NetworkHelper.m */; };
 		0D750FF31CDC2DA600C4FED5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D750FF21CDC2DA600C4FED5 /* LoginViewController.m */; };
 		0DD7BF5B1CE0489300CB7CA3 /* Hour.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD7BF5A1CE0489300CB7CA3 /* Hour.xib */; };
 		0DD7BF5E1CE05EAE00CB7CA3 /* Hour.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF5D1CE05EAE00CB7CA3 /* Hour.m */; };
@@ -53,8 +53,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D5C8AFD1CE1B3A90025A369 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
-		0D5C8AFE1CE1B3A90025A369 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		0D5C8B091CE1D6DB0025A369 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0D5C8B0B1CE1D7100025A369 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../../../Downloads/Reachability-master/Reachability.h"; sourceTree = "<group>"; };
 		0D5C8B0C1CE1D7100025A369 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "../../../Downloads/Reachability-master/Reachability.m"; sourceTree = "<group>"; };
@@ -78,6 +76,8 @@
 		0D6D01931CD9F058009E942E /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		0D6D019E1CDA1234009E942E /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		0D6D019F1CDA1234009E942E /* Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
+		0D6DE82E1CE31DD000E84CBC /* NetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkHelper.h; sourceTree = "<group>"; };
+		0D6DE82F1CE31DD000E84CBC /* NetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkHelper.m; sourceTree = "<group>"; };
 		0D750FF11CDC2DA600C4FED5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0D750FF21CDC2DA600C4FED5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0DD7BF5A1CE0489300CB7CA3 /* Hour.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Hour.xib; sourceTree = "<group>"; };
@@ -150,8 +150,8 @@
 		0D5C8AFC1CE1B2FD0025A369 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
-				0D5C8AFD1CE1B3A90025A369 /* Helper.h */,
-				0D5C8AFE1CE1B3A90025A369 /* Helper.m */,
+				0D6DE82E1CE31DD000E84CBC /* NetworkHelper.h */,
+				0D6DE82F1CE31DD000E84CBC /* NetworkHelper.m */,
 			);
 			name = Commons;
 			sourceTree = "<group>";
@@ -534,6 +534,7 @@
 				0DD7BF7A1CE07ABD00CB7CA3 /* DailyModel.m in Sources */,
 				0DD7BF741CE0788800CB7CA3 /* DailyAPI.m in Sources */,
 				0DD7BF701CE0652D00CB7CA3 /* FacebookService.m in Sources */,
+				0D6DE8301CE31DD000E84CBC /* NetworkHelper.m in Sources */,
 				0DD7BF5E1CE05EAE00CB7CA3 /* Hour.m in Sources */,
 				0D5C8B0D1CE1D7100025A369 /* Reachability.m in Sources */,
 				0D6D015A1CD9E3B2009E942E /* AppDelegate.m in Sources */,
@@ -543,7 +544,6 @@
 				0D6D01571CD9E3B2009E942E /* main.m in Sources */,
 				0D6D01A01CDA1234009E942E /* Header.m in Sources */,
 				0D750FF31CDC2DA600C4FED5 /* LoginViewController.m in Sources */,
-				0D5C8AFF1CE1B3A90025A369 /* Helper.m in Sources */,
 				0DD7BF6D1CE0651C00CB7CA3 /* NetworkService.m in Sources */,
 				0DD7BF771CE07A7600CB7CA3 /* WeatherModel.m in Sources */,
 			);

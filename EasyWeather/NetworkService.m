@@ -23,56 +23,47 @@
     return self;
 }
 
-- (void)checkNetwork {
-    // Allocate a reachability object
-    Reachability* reach = [Reachability reachabilityWithHostname:@"www.google.com"];
+- (void)getData:(BOOL)type url:(NSString *)urlRequest parameter:(NSDictionary *)param complete:(void (^)(NSDictionary *, NSError *))handeBlock {    
+    NetworkHelper *networkHelper = [NetworkHelper new];
     
-    // Set the blocks
-    reach.reachableBlock = ^(Reachability*reach)
-    {
-        // keep in mind this is called on a background thread
-        // and if you are updating the UI it needs to happen
-        // on the main thread, like this:
+    if ([networkHelper isNetworkAvailable]) {
+        if (type) {
+            [self.sessionManager GET:urlRequest parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                NSDictionary *jsonData = responseObject;
+                handeBlock(jsonData, nil);
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                [self processingError:error];
+                handeBlock(nil, error);
+            }];
+        } else {
+            [self.sessionManager POST:urlRequest parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                NSDictionary *jsonData = responseObject;
+                handeBlock(jsonData, nil);
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                [self processingError:error];
+                handeBlock(nil, error);
+            }];
+        }
+    } else {
+        self.type = type;
+        self.param = param;
+        self.urlRequest = urlRequest;
+        self.handlerBlock = handeBlock;
         
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSLog(@"REACHABLE!");
-        });
-    };
-    
-    reach.unreachableBlock = ^(Reachability*reach)
-    {
-        NSLog(@"UNREACHABLE!");
-        dispatch_async(dispatch_get_main_queue(), ^{
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert"
-                                                            message:@"No network found!"
-                                                           delegate:self
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-            [alert show];
-        });
-    };
-    
-    // Start the notifier, which will cause the reachability object to retain itself!
-    [reach startNotifier];
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle:@"Network not found!" message:@"Do you want retry?"
+                              delegate:self
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:@"Cancel", nil];
+        
+        [alert show];
+    }
 }
 
-- (void)getData:(BOOL)type url:(NSString *)urlRequest parameter:(NSDictionary *)param complete:(void (^)(NSDictionary *, NSError *))handeBlock {
-    [self checkNetwork];
-    
-    if (type) {
-        [self.sessionManager GET:urlRequest parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            NSDictionary *jsonData = responseObject;
-            handeBlock(jsonData, nil);
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            [self processingError:error];
-        }];
-    } else {
-        [self.sessionManager POST:urlRequest parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            NSDictionary *jsonData = responseObject;
-            handeBlock(jsonData, nil);
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            [self processingError:error];
-        }];
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == [alertView cancelButtonIndex]) {
+        [self getData:self.type url:self.urlRequest parameter:self.param complete:self.handlerBlock];
     }
 }
 

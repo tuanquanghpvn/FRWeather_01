@@ -17,7 +17,7 @@
 #define URL_HOUR @"forecast"
 
 // Define UI
-#define HEIGHT_FOR_HEADER_IN_SECTION 55
-#define HEIGHT_FOR_ROW_AT_INDEX_PATH 45
+#define HEADER_HEIGHT_FOR_HEADER_IN_SECTION 55
+#define CELL_HEIGHT_FOR_ROW_AT_INDEX_PATH 45
 
 #endif /* GlobalConfig_h */
