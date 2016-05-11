@@ -38,6 +38,12 @@
     [self.scvHour setContentSize:CGSizeMake(width, self.scvHour.bounds.size.height)];
 }
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    
+    self.lblCityName.text = @"";
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

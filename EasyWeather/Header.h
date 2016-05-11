@@ -18,5 +18,6 @@
 
 - (void)setData:(DailyModel *)dailyModel;
 - (void)loadDataScrollView:(NSMutableArray *) jsonHour;
+- (void)prepareForReuse;
 
 @end

@@ -64,8 +64,7 @@
         NSArray* weather_first_hour = [jsonHour objectForKey:@"list"];
         for (NSDictionary *item in weather_first_hour) {
             WeatherModel *weather = [WeatherModel new];
-            
-            NSDictionary* weather_temp = [[item objectForKey:@"weather"] objectAtIndex:0];
+            NSDictionary* weather_temp = [[item objectForKey:@"weather67676767"] objectAtIndex:0];
             weather.weatherID = [weather_temp objectForKey:@"id"];
             weather.weatherName = [weather_temp objectForKey:@"main"];
             weather.weatherDescription = [weather_temp objectForKey:@"description"];

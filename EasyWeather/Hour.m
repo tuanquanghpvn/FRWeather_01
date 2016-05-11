@@ -10,7 +10,7 @@
 
 @implementation Hour
 
-- (void)setData:(WeatherModel *) weatherModel {
+- (void)setData:(WeatherModel *) weatherModel {    
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"HH:mm"];
     
