@@ -67,7 +67,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return HEIGHT_FOR_HEADER_IN_SECTION;
+    return HEADER_HEIGHT_FOR_HEADER_IN_SECTION;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -90,7 +90,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return HEIGHT_FOR_ROW_AT_INDEX_PATH;
+    return CELL_HEIGHT_FOR_ROW_AT_INDEX_PATH;
 }
 
 /*
