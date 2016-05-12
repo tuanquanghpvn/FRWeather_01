@@ -93,6 +93,20 @@
     return CELL_HEIGHT_FOR_ROW_AT_INDEX_PATH;
 }
 
+- (IBAction)btnShareFacebook:(id)sender {
+    FacebookService *facebookService = [FacebookService new];
+    [facebookService checkPermission:^(BOOL isLogged) {
+        if (isLogged) {
+            UIGraphicsBeginImageContext(self.view.bounds.size);
+            [self.view drawViewHierarchyInRect:self.view.bounds afterScreenUpdates:TRUE];
+            UIImage *screengrab = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+            
+            [facebookService shareScreenshot:self img:screengrab];
+        }
+    }];
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -9,13 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKShareKit/FBSDKShareKit.h>
 
 @interface FacebookService : NSObject
 
 - (BOOL)currentAccessTokenFacebook;
 - (void)login:(UIViewController *)viewController completion:(void (^)(BOOL isLogged))handlerBlock;
 - (void)getUserInfo:(void (^)(NSDictionary *userInfo))handleBlock;
-- (BOOL)checkPermission;
-- (BOOL)shareCaptureHome;
+- (void)checkPermission:(void (^)(BOOL isLogged))handleBlock;
+- (void)shareScreenshot:(UIViewController *)viewController img:(UIImage *)imageShare;
 
 @end
