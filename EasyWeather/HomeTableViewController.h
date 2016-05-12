@@ -11,6 +11,7 @@
 #import "Header.h"
 #import "DailyAPI.h"
 #import "WeatherModel.h"
+#import "FacebookService.h"
 
 @interface HomeTableViewController : UITableViewController
 

@@ -96,7 +96,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="FRWeather" id="qic-yS-fF3">
-                        <barButtonItem key="leftBarButtonItem" title="Add" id="wJI-uv-QPs"/>
+                        <barButtonItem key="leftBarButtonItem" title="Add" id="wJI-uv-QPs">
+                            <connections>
+                                <action selector="btnAddCountry:" destination="Wx2-Ve-zzo" id="OdJ-ww-RAu"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="uJi-9O-J1p">
+                            <connections>
+                                <action selector="btnShareFacebook:" destination="Wx2-Ve-zzo" id="SlA-LE-8HU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

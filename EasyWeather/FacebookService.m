@@ -19,16 +19,30 @@
 
 - (void)login:(UIViewController *)viewController completion:(void (^)(BOOL isLogged))handleBlock {
     FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
-    [login
-     logInWithReadPermissions: @[@"public_profile", @"email"]
-     fromViewController:viewController
-     handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
-         if (error || result.isCancelled) {
-             handleBlock(FALSE);
-         } else {
-             handleBlock(TRUE);
-         }
-     }];
+    
+    [login logInWithPublishPermissions:@[@"publish_actions"] fromViewController:nil handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+        if (error) {
+            handleBlock(NO);
+        } else if (result.isCancelled) {
+            handleBlock(NO);
+        } else {
+            if ([result.grantedPermissions containsObject:@"publish_actions"]) {
+                [login logInWithReadPermissions:@[@"email", @"user_birthday"] fromViewController:viewController handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+                    if (error) {
+                        // Process error
+                        handleBlock(NO);
+                    } else if (result.isCancelled) {
+                        // Handle cancellations
+                        handleBlock(NO);
+                    } else {
+                        handleBlock(YES);
+                    }
+                }];
+            } else {
+                handleBlock(NO);
+            }
+        }
+    }];
 }
 
 - (void)getUserInfo:(void(^)(NSDictionary *userInfo))handleBlock {
@@ -42,12 +56,25 @@
      }];
 }
 
-- (BOOL)checkPermission {
-    return TRUE;
+- (void)checkPermission:(void (^)(BOOL isLogged))handleBlock {
+    if ([[FBSDKAccessToken currentAccessToken] hasGranted:@"publish_actions"]) {
+        // TODO: publish content.
+        NSLog(@"You have permission publish");
+        handleBlock(YES);
+    } else {
+        NSLog(@"Need Permission");
+        handleBlock(NO);
+    }
 }
 
-- (BOOL)shareCaptureHome {
-    return TRUE;
+- (void)shareScreenshot:(UIViewController *)viewController img:(UIImage *)imageShare {
+    FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] init];
+    photo.image = imageShare;
+    photo.userGenerated = YES;
+    FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
+    content.photos = @[photo];
+    
+    [FBSDKShareDialog showFromViewController:viewController withContent:content delegate:nil];
 }
 
 @end
