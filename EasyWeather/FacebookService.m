@@ -20,7 +20,7 @@
 - (void)login:(UIViewController *)viewController completion:(void (^)(BOOL isLogged))handleBlock {
     FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
     
-    [login logInWithPublishPermissions:@[@"publish_actions"] fromViewController:nil handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+    [login logInWithPublishPermissions:@[@"publish_actions"] fromViewController:viewController handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
         if (error) {
             handleBlock(NO);
         } else if (result.isCancelled) {
