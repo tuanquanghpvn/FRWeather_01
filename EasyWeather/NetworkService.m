@@ -24,9 +24,9 @@
 }
 
 - (void)getData:(BOOL)type url:(NSString *)urlRequest parameter:(NSDictionary *)param complete:(void (^)(NSDictionary *, NSError *))handeBlock {    
-    NetworkHelper *networkHelper = [NetworkHelper new];
-    
-    if ([networkHelper isNetworkAvailable]) {
+    // NetworkHelper *networkHelper = [NetworkHelper new];
+    // [networkHelper isNetworkAvailable]
+    if (YES) {
         if (type) {
             [self.sessionManager GET:urlRequest parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 NSDictionary *jsonData = responseObject;

@@ -21,6 +21,9 @@
 		0D6D01A01CDA1234009E942E /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D019F1CDA1234009E942E /* Header.m */; };
 		0D6DE8301CE31DD000E84CBC /* NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6DE82F1CE31DD000E84CBC /* NetworkHelper.m */; };
 		0D750FF31CDC2DA600C4FED5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D750FF21CDC2DA600C4FED5 /* LoginViewController.m */; };
+		0D76F7CC1CE58BF800EBAF76 /* CityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D76F7CB1CE58BF800EBAF76 /* CityTableViewController.m */; };
+		0D76F7D11CE58FF900EBAF76 /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D76F7D01CE58FF900EBAF76 /* SearchResultsTableViewController.m */; };
+		0D76F7D31CE5918900EBAF76 /* cityData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D76F7D21CE5918900EBAF76 /* cityData.json */; };
 		0DD7BF5B1CE0489300CB7CA3 /* Hour.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD7BF5A1CE0489300CB7CA3 /* Hour.xib */; };
 		0DD7BF5E1CE05EAE00CB7CA3 /* Hour.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF5D1CE05EAE00CB7CA3 /* Hour.m */; };
 		0DD7BF6A1CE064F900CB7CA3 /* PushNotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF691CE064F900CB7CA3 /* PushNotificationService.m */; };
@@ -80,6 +83,11 @@
 		0D6DE82F1CE31DD000E84CBC /* NetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkHelper.m; sourceTree = "<group>"; };
 		0D750FF11CDC2DA600C4FED5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0D750FF21CDC2DA600C4FED5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0D76F7CA1CE58BF800EBAF76 /* CityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableViewController.h; sourceTree = "<group>"; };
+		0D76F7CB1CE58BF800EBAF76 /* CityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewController.m; sourceTree = "<group>"; };
+		0D76F7CF1CE58FF900EBAF76 /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
+		0D76F7D01CE58FF900EBAF76 /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
+		0D76F7D21CE5918900EBAF76 /* cityData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cityData.json; path = "../../../../Downloads/UISearchController-Demo-master/UISearchControllerDemo/cityData.json"; sourceTree = "<group>"; };
 		0DD7BF5A1CE0489300CB7CA3 /* Hour.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Hour.xib; sourceTree = "<group>"; };
 		0DD7BF5C1CE05EAE00CB7CA3 /* Hour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hour.h; sourceTree = "<group>"; };
 		0DD7BF5D1CE05EAE00CB7CA3 /* Hour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hour.m; sourceTree = "<group>"; };
@@ -147,6 +155,17 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		0D51F4EC1CE5884A007C41FE /* City */ = {
+			isa = PBXGroup;
+			children = (
+				0D76F7CA1CE58BF800EBAF76 /* CityTableViewController.h */,
+				0D76F7CB1CE58BF800EBAF76 /* CityTableViewController.m */,
+				0D76F7CF1CE58FF900EBAF76 /* SearchResultsTableViewController.h */,
+				0D76F7D01CE58FF900EBAF76 /* SearchResultsTableViewController.m */,
+			);
+			name = City;
+			sourceTree = "<group>";
+		};
 		0D5C8AFC1CE1B2FD0025A369 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +227,7 @@
 		0D6D01551CD9E3B2009E942E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0D76F7D21CE5918900EBAF76 /* cityData.json */,
 				0D6D01561CD9E3B2009E942E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -234,6 +254,7 @@
 		0D6D01881CD9E3CD009E942E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0D51F4EC1CE5884A007C41FE /* City */,
 				0D750FF01CDC2D8400C4FED5 /* Login */,
 				0D6D015E1CD9E3B2009E942E /* Main.storyboard */,
 				0D6D01981CDA00CA009E942E /* Home */,
@@ -458,6 +479,7 @@
 				0D6D01621CD9E3B2009E942E /* Assets.xcassets in Resources */,
 				0D6D018D1CD9EB39009E942E /* Header.xib in Resources */,
 				0D6D01601CD9E3B2009E942E /* Main.storyboard in Resources */,
+				0D76F7D31CE5918900EBAF76 /* cityData.json in Resources */,
 				0DD7BF5B1CE0489300CB7CA3 /* Hour.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,9 +554,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DD7BF7A1CE07ABD00CB7CA3 /* DailyModel.m in Sources */,
+				0D76F7D11CE58FF900EBAF76 /* SearchResultsTableViewController.m in Sources */,
 				0DD7BF741CE0788800CB7CA3 /* DailyAPI.m in Sources */,
 				0DD7BF701CE0652D00CB7CA3 /* FacebookService.m in Sources */,
 				0D6DE8301CE31DD000E84CBC /* NetworkHelper.m in Sources */,
+				0D76F7CC1CE58BF800EBAF76 /* CityTableViewController.m in Sources */,
 				0DD7BF5E1CE05EAE00CB7CA3 /* Hour.m in Sources */,
 				0D5C8B0D1CE1D7100025A369 /* Reachability.m in Sources */,
 				0D6D015A1CD9E3B2009E942E /* AppDelegate.m in Sources */,
