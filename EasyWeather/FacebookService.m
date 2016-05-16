@@ -20,27 +20,22 @@
 - (void)login:(UIViewController *)viewController completion:(void (^)(BOOL isLogged))handleBlock {
     FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
     
-    [login logInWithPublishPermissions:@[@"publish_actions"] fromViewController:viewController handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+    [login logInWithReadPermissions:@[@"public_profile", @"email"] fromViewController:viewController handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
         if (error) {
+            // Process error
             handleBlock(NO);
         } else if (result.isCancelled) {
+            // Handle cancellations
             handleBlock(NO);
         } else {
-            if ([result.grantedPermissions containsObject:@"publish_actions"]) {
-                [login logInWithReadPermissions:@[@"email", @"user_birthday"] fromViewController:viewController handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
-                    if (error) {
-                        // Process error
-                        handleBlock(NO);
-                    } else if (result.isCancelled) {
-                        // Handle cancellations
-                        handleBlock(NO);
-                    } else {
-                        handleBlock(YES);
-                    }
-                }];
-            } else {
-                handleBlock(NO);
-            }
+//            handleBlock(YES);
+            [login logInWithPublishPermissions:@[@"publish_actions"] fromViewController:viewController handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+                if (error) {
+                    handleBlock(NO);
+                } else {
+                    handleBlock(YES);
+                }
+            }];
         }
     }];
 }
@@ -50,6 +45,7 @@
     [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:parameters]
      startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
          if (!error) {
+             NSLog(@"%@", result);
              handleBlock(result);
          }
          handleBlock(nil);

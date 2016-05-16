@@ -40,7 +40,8 @@
 - (void)loadData {
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSArray *listCityID = [userDefault objectForKey:@"city"];
-
+    
+    self.weatherSection = [NSMutableArray new];
     for (NSString *cityID in listCityID) {
         // Call Service Load Weather Daily
         [self.dailyAPI getDailyWeather:cityID complete:^(BOOL isLogged, DailyModel *dailyDTO) {

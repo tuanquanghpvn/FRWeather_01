@@ -25,7 +25,7 @@
 
 - (void)getData:(BOOL)type url:(NSString *)urlRequest parameter:(NSDictionary *)param complete:(void (^)(NSDictionary *, NSError *))handeBlock {    
     NetworkHelper *networkHelper = [NetworkHelper new];
-    
+    [networkHelper startNetworkReachabilityMonitoring];
     if ([networkHelper isNetworkAvailable]) {
         if (type) {
             [self.sessionManager GET:urlRequest parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

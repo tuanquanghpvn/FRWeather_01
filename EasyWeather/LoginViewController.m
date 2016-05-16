@@ -22,7 +22,9 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     if ([self.facebookService currentAccessTokenFacebook]) {
-        [self performSegueWithIdentifier:@"segueHomePage" sender:self];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UINavigationController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"Home"];
+        [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
     }
 }
 

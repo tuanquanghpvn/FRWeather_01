@@ -10,11 +10,16 @@
 
 @implementation NetworkHelper
 
-- (BOOL)isNetworkAvailable {
-    if ([[AFNetworkReachabilityManager sharedManager] isReachable]) {
-        return YES;
+- (instancetype)init {
+    self = [super init];
+    if (self != nil) {
+        [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     }
-    return NO;
+    return self;
+}
+
+- (BOOL)isNetworkAvailable {
+    return [[AFNetworkReachabilityManager sharedManager] isReachable];
 }
 
 @end

@@ -15,13 +15,25 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     // Override point for customization after application launch.
+    
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
     
     [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    FacebookService* facebookService = [[FacebookService alloc] init];
+    if ([facebookService currentAccessTokenFacebook]) {
+        UINavigationController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"Home"];
+        [self.window setRootViewController:rootViewController];
+    } else {
+        LoginViewController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"Login"];
+        [self.window setRootViewController:rootViewController];
+    }
+
 
     return YES;
 }
