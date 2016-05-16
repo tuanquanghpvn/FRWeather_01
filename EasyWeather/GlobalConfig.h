@@ -20,4 +20,6 @@
 #define HEADER_HEIGHT_FOR_HEADER_IN_SECTION 55
 #define CELL_HEIGHT_FOR_ROW_AT_INDEX_PATH 45
 
+#define LIST_CITY_JSON @"cityData"
+
 #endif /* GlobalConfig_h */

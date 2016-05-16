@@ -22,11 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Get local json file we'll be using to populate our TableView
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"cityData" ofType:@"json"];
-    NSData *data = [NSData dataWithContentsOfFile:path];
-    NSError *error;
-    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+    // Load Json City Data
+    LoadDataHelper *loadDataHelper = [LoadDataHelper new];
+    NSDictionary *dict = [loadDataHelper loadJsonData:LIST_CITY_JSON];
     self.cities = dict[@"cities"];
     
     

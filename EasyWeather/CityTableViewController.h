@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LoadDataHelper.h"
+#import "GlobalConfig.h"
 
 @interface CityTableViewController : UITableViewController
 
