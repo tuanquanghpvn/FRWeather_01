@@ -11,6 +11,7 @@
 #import "FacebookService.h"
 #import "LoginViewController.h"
 #import "OneSignalService.h"
+#import "DailyAPI.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

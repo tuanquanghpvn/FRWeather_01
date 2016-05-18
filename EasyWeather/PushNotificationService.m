@@ -10,4 +10,8 @@
 
 @implementation PushNotificationService
 
+- (void)scheduleNotification {
+    
+}
+
 @end

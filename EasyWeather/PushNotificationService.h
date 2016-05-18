@@ -10,4 +10,6 @@
 
 @interface PushNotificationService : NSObject
 
+- (void)scheduleNotification;
+
 @end

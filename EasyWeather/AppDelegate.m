@@ -43,6 +43,33 @@
     NSLog(@"Did Register for Remote Notifications with Device Token (%@)", userInfo);
 }
 
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    NSLog(@"Did Register for Remote Notifications with Device Token (%@)", userInfo);
+    
+    [self application:application performFetchWithCompletionHandler:^(UIBackgroundFetchResult result) {
+        completionHandler(UIBackgroundFetchResultNewData);
+    }];
+}
+
+- (void) application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    DailyAPI *dailyAPI = [DailyAPI new];
+    [dailyAPI getDailyWeather:@"1581129" complete:^(BOOL isLogged, DailyModel *dailyDTO) {
+        
+        NSLog(@"Did Register for Remote Notifications with Device Token (%@)", dailyDTO);
+        
+        UILocalNotification *notification = [[UILocalNotification alloc] init];
+        notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:7];
+        notification.alertBody = @"This is local notification!";
+        notification.timeZone = [NSTimeZone defaultTimeZone];
+        notification.soundName = UILocalNotificationDefaultSoundName;
+        notification.applicationIconBadgeNumber = 10;
+        
+        [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+        
+        completionHandler(UIBackgroundFetchResultNewData);
+    }];
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
