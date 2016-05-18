@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "FacebookService.h"
 #import "LoginViewController.h"
+#import "OneSignalService.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

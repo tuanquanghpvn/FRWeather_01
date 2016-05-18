@@ -1,5 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/OneSignal/iOS_SDK/Framework"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/OneSignal"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/OneSignal"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "OneSignal" -framework "Security" -framework "SystemConfiguration"
 PODS_ROOT = ${SRCROOT}/Pods

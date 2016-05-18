@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D36F5801CE99BF100BC5EF3 /* LoadDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D36F57F1CE99BF100BC5EF3 /* LoadDataHelper.m */; };
+		0D51FF4C1CE9C80A00C1BB01 /* OneSignalService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D51FF4B1CE9C80A00C1BB01 /* OneSignalService.m */; };
 		0D5C8B0A1CE1D6DB0025A369 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5C8B091CE1D6DB0025A369 /* SystemConfiguration.framework */; };
 		0D5C8B0D1CE1D7100025A369 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C8B0C1CE1D7100025A369 /* Reachability.m */; };
 		0D6D01571CD9E3B2009E942E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D01561CD9E3B2009E942E /* main.m */; };
@@ -59,6 +60,8 @@
 /* Begin PBXFileReference section */
 		0D36F57E1CE99BF100BC5EF3 /* LoadDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadDataHelper.h; sourceTree = "<group>"; };
 		0D36F57F1CE99BF100BC5EF3 /* LoadDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadDataHelper.m; sourceTree = "<group>"; };
+		0D51FF4A1CE9C80A00C1BB01 /* OneSignalService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneSignalService.h; sourceTree = "<group>"; };
+		0D51FF4B1CE9C80A00C1BB01 /* OneSignalService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneSignalService.m; sourceTree = "<group>"; };
 		0D5C8B091CE1D6DB0025A369 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0D5C8B0B1CE1D7100025A369 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../../../Downloads/Reachability-master/Reachability.h"; sourceTree = "<group>"; };
 		0D5C8B0C1CE1D7100025A369 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "../../../Downloads/Reachability-master/Reachability.m"; sourceTree = "<group>"; };
@@ -154,6 +157,8 @@
 				0DD7BF6C1CE0651C00CB7CA3 /* NetworkService.m */,
 				0DD7BF6E1CE0652D00CB7CA3 /* FacebookService.h */,
 				0DD7BF6F1CE0652D00CB7CA3 /* FacebookService.m */,
+				0D51FF4A1CE9C80A00C1BB01 /* OneSignalService.h */,
+				0D51FF4B1CE9C80A00C1BB01 /* OneSignalService.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -437,10 +442,10 @@
 				TargetAttributes = {
 					0D6D01511CD9E3B1009E942E = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 3KXWWG3AEB;
+						DevelopmentTeam = 32MSK5YDT8;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -560,6 +565,7 @@
 			files = (
 				0DD7BF7A1CE07ABD00CB7CA3 /* DailyModel.m in Sources */,
 				0D76F7D11CE58FF900EBAF76 /* SearchResultsTableViewController.m in Sources */,
+				0D51FF4C1CE9C80A00C1BB01 /* OneSignalService.m in Sources */,
 				0DD7BF741CE0788800CB7CA3 /* DailyAPI.m in Sources */,
 				0DD7BF701CE0652D00CB7CA3 /* FacebookService.m in Sources */,
 				0D6DE8301CE31DD000E84CBC /* NetworkHelper.m in Sources */,
@@ -709,7 +715,8 @@
 			baseConfigurationReference = FA49B6F1F29DF80F881763C5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: phan hai (346EK46QDJ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -718,7 +725,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.framgia.dev.frweather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "884bb592-dd07-426a-b3ed-802eca5ea0c1";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -727,7 +734,8 @@
 			baseConfigurationReference = 62C32DFE83A70D82B0F45754 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: phan hai (346EK46QDJ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -736,7 +744,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.framgia.dev.frweather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "884bb592-dd07-426a-b3ed-802eca5ea0c1";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

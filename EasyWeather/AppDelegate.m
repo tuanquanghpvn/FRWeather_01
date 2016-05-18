@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @interface AppDelegate ()
 
@@ -34,8 +33,14 @@
         [self.window setRootViewController:rootViewController];
     }
 
-
+    OneSignalService *oneSignalService = [OneSignalService new];
+    [oneSignalService registerOneSignal:launchOptions];
+    
     return YES;
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    NSLog(@"Did Register for Remote Notifications with Device Token (%@)", userInfo);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

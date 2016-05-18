@@ -9,6 +9,8 @@
 #ifndef GlobalConfig_h
 #define GlobalConfig_h
 
+#define ONE_SIGNAL_ID @"542c272e-2350-4dc2-8063-3da7fb10ae91"
+
 #define BASE_URL @"http://api.openweathermap.org/data/2.5/"
 #define APP_ID @"d77b3fa0998439dc4ec3115d3c1f6cb8"
 
