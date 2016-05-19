@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D36F5801CE99BF100BC5EF3 /* LoadDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D36F57F1CE99BF100BC5EF3 /* LoadDataHelper.m */; };
-		0D51FF4C1CE9C80A00C1BB01 /* OneSignalService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D51FF4B1CE9C80A00C1BB01 /* OneSignalService.m */; };
 		0D5C8B0A1CE1D6DB0025A369 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5C8B091CE1D6DB0025A369 /* SystemConfiguration.framework */; };
-		0D5C8B0D1CE1D7100025A369 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C8B0C1CE1D7100025A369 /* Reachability.m */; };
 		0D6D01571CD9E3B2009E942E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D01561CD9E3B2009E942E /* main.m */; };
 		0D6D015A1CD9E3B2009E942E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D01591CD9E3B2009E942E /* AppDelegate.m */; };
-		0D6D01601CD9E3B2009E942E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6D015E1CD9E3B2009E942E /* Main.storyboard */; };
 		0D6D01621CD9E3B2009E942E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6D01611CD9E3B2009E942E /* Assets.xcassets */; };
 		0D6D01701CD9E3B2009E942E /* EasyWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D016F1CD9E3B2009E942E /* EasyWeatherTests.m */; };
 		0D6D017B1CD9E3B2009E942E /* EasyWeatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D017A1CD9E3B2009E942E /* EasyWeatherUITests.m */; };
-		0D6D018B1CD9E5A3009E942E /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D018A1CD9E5A3009E942E /* HomeTableViewController.m */; };
-		0D6D018D1CD9EB39009E942E /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D6D018C1CD9EB39009E942E /* Header.xib */; };
-		0D6D01941CD9F058009E942E /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D01931CD9F058009E942E /* HomeTableViewCell.m */; };
-		0D6D01A01CDA1234009E942E /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D019F1CDA1234009E942E /* Header.m */; };
-		0D6DE8301CE31DD000E84CBC /* NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6DE82F1CE31DD000E84CBC /* NetworkHelper.m */; };
-		0D750FF31CDC2DA600C4FED5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D750FF21CDC2DA600C4FED5 /* LoginViewController.m */; };
-		0D76F7CC1CE58BF800EBAF76 /* CityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D76F7CB1CE58BF800EBAF76 /* CityTableViewController.m */; };
-		0D76F7D11CE58FF900EBAF76 /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D76F7D01CE58FF900EBAF76 /* SearchResultsTableViewController.m */; };
 		0D76F7D31CE5918900EBAF76 /* cityData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D76F7D21CE5918900EBAF76 /* cityData.json */; };
-		0DD7BF5B1CE0489300CB7CA3 /* Hour.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD7BF5A1CE0489300CB7CA3 /* Hour.xib */; };
-		0DD7BF5E1CE05EAE00CB7CA3 /* Hour.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF5D1CE05EAE00CB7CA3 /* Hour.m */; };
-		0DD7BF6A1CE064F900CB7CA3 /* PushNotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF691CE064F900CB7CA3 /* PushNotificationService.m */; };
-		0DD7BF6D1CE0651C00CB7CA3 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF6C1CE0651C00CB7CA3 /* NetworkService.m */; };
-		0DD7BF701CE0652D00CB7CA3 /* FacebookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF6F1CE0652D00CB7CA3 /* FacebookService.m */; };
-		0DD7BF741CE0788800CB7CA3 /* DailyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF731CE0788800CB7CA3 /* DailyAPI.m */; };
-		0DD7BF771CE07A7600CB7CA3 /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF761CE07A7600CB7CA3 /* WeatherModel.m */; };
-		0DD7BF7A1CE07ABD00CB7CA3 /* DailyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7BF791CE07ABD00CB7CA3 /* DailyModel.m */; };
+		0D8008681CED656800245181 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8008671CED656800245181 /* Reachability.m */; };
+		0D8008991CED677100245181 /* DailyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D80086B1CED677100245181 /* DailyAPI.m */; };
+		0D80089A1CED677100245181 /* LoadDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D80086E1CED677100245181 /* LoadDataHelper.m */; };
+		0D80089B1CED677100245181 /* NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8008701CED677100245181 /* NetworkHelper.m */; };
+		0D80089C1CED677100245181 /* DailyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8008761CED677100245181 /* DailyModel.m */; };
+		0D80089D1CED677100245181 /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8008791CED677100245181 /* WeatherModel.m */; };
+		0D80089E1CED677100245181 /* FacebookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D80087C1CED677100245181 /* FacebookService.m */; };
+		0D80089F1CED677100245181 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D80087E1CED677100245181 /* NetworkService.m */; };
+		0D8008A01CED677100245181 /* OneSignalService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8008801CED677100245181 /* OneSignalService.m */; };
+		0D8008A11CED677100245181 /* PushNotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8008821CED677100245181 /* PushNotificationService.m */; };
+		0D8008A21CED677100245181 /* CityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8008861CED677100245181 /* CityTableViewController.m */; };
+		0D8008A31CED677100245181 /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8008881CED677100245181 /* SearchResultsTableViewController.m */; };
+		0D8008A41CED677100245181 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D80088C1CED677100245181 /* HomeTableViewCell.m */; };
+		0D8008A51CED677100245181 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D80088E1CED677100245181 /* HomeTableViewController.m */; };
+		0D8008A61CED677100245181 /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8008911CED677100245181 /* Header.m */; };
+		0D8008A71CED677100245181 /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D8008921CED677100245181 /* Header.xib */; };
+		0D8008A81CED677100245181 /* Hour.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8008941CED677100245181 /* Hour.m */; };
+		0D8008A91CED677100245181 /* Hour.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D8008951CED677100245181 /* Hour.xib */; };
+		0D8008AA1CED677100245181 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8008981CED677100245181 /* LoginViewController.m */; };
+		0D8008AD1CED682100245181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8008AB1CED682100245181 /* Main.storyboard */; };
 		0DF170291CDC47DB005D1233 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF170261CDC47DB005D1233 /* FBSDKCoreKit.framework */; };
 		0DF1702A1CDC47DB005D1233 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF170271CDC47DB005D1233 /* FBSDKLoginKit.framework */; };
 		0DF1702B1CDC47DB005D1233 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF170281CDC47DB005D1233 /* FBSDKShareKit.framework */; };
@@ -58,18 +58,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D36F57E1CE99BF100BC5EF3 /* LoadDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadDataHelper.h; sourceTree = "<group>"; };
-		0D36F57F1CE99BF100BC5EF3 /* LoadDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadDataHelper.m; sourceTree = "<group>"; };
-		0D51FF4A1CE9C80A00C1BB01 /* OneSignalService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneSignalService.h; sourceTree = "<group>"; };
-		0D51FF4B1CE9C80A00C1BB01 /* OneSignalService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneSignalService.m; sourceTree = "<group>"; };
 		0D5C8B091CE1D6DB0025A369 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		0D5C8B0B1CE1D7100025A369 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../../../Downloads/Reachability-master/Reachability.h"; sourceTree = "<group>"; };
-		0D5C8B0C1CE1D7100025A369 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "../../../Downloads/Reachability-master/Reachability.m"; sourceTree = "<group>"; };
 		0D6D01521CD9E3B1009E942E /* EasyWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6D01561CD9E3B2009E942E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D6D01581CD9E3B2009E942E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D6D01591CD9E3B2009E942E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0D6D015F1CD9E3B2009E942E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D6D01611CD9E3B2009E942E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D6D01661CD9E3B2009E942E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D6D016B1CD9E3B2009E942E /* EasyWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,38 +71,45 @@
 		0D6D01761CD9E3B2009E942E /* EasyWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6D017A1CD9E3B2009E942E /* EasyWeatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyWeatherUITests.m; sourceTree = "<group>"; };
 		0D6D017C1CD9E3B2009E942E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D6D01891CD9E5A3009E942E /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
-		0D6D018A1CD9E5A3009E942E /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
-		0D6D018C1CD9EB39009E942E /* Header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Header.xib; sourceTree = "<group>"; };
-		0D6D01921CD9F058009E942E /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
-		0D6D01931CD9F058009E942E /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
-		0D6D019E1CDA1234009E942E /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
-		0D6D019F1CDA1234009E942E /* Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
-		0D6DE82E1CE31DD000E84CBC /* NetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkHelper.h; sourceTree = "<group>"; };
-		0D6DE82F1CE31DD000E84CBC /* NetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkHelper.m; sourceTree = "<group>"; };
-		0D750FF11CDC2DA600C4FED5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		0D750FF21CDC2DA600C4FED5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		0D76F7CA1CE58BF800EBAF76 /* CityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableViewController.h; sourceTree = "<group>"; };
-		0D76F7CB1CE58BF800EBAF76 /* CityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewController.m; sourceTree = "<group>"; };
-		0D76F7CF1CE58FF900EBAF76 /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
-		0D76F7D01CE58FF900EBAF76 /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
 		0D76F7D21CE5918900EBAF76 /* cityData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cityData.json; path = "../../../../Downloads/UISearchController-Demo-master/UISearchControllerDemo/cityData.json"; sourceTree = "<group>"; };
-		0DD7BF5A1CE0489300CB7CA3 /* Hour.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Hour.xib; sourceTree = "<group>"; };
-		0DD7BF5C1CE05EAE00CB7CA3 /* Hour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hour.h; sourceTree = "<group>"; };
-		0DD7BF5D1CE05EAE00CB7CA3 /* Hour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hour.m; sourceTree = "<group>"; };
-		0DD7BF681CE064F900CB7CA3 /* PushNotificationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationService.h; sourceTree = "<group>"; };
-		0DD7BF691CE064F900CB7CA3 /* PushNotificationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationService.m; sourceTree = "<group>"; };
-		0DD7BF6B1CE0651C00CB7CA3 /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
-		0DD7BF6C1CE0651C00CB7CA3 /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
-		0DD7BF6E1CE0652D00CB7CA3 /* FacebookService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookService.h; sourceTree = "<group>"; };
-		0DD7BF6F1CE0652D00CB7CA3 /* FacebookService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookService.m; sourceTree = "<group>"; };
-		0DD7BF711CE0661400CB7CA3 /* GlobalConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConfig.h; sourceTree = "<group>"; };
-		0DD7BF721CE0788800CB7CA3 /* DailyAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyAPI.h; sourceTree = "<group>"; };
-		0DD7BF731CE0788800CB7CA3 /* DailyAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyAPI.m; sourceTree = "<group>"; };
-		0DD7BF751CE07A7600CB7CA3 /* WeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherModel.h; sourceTree = "<group>"; };
-		0DD7BF761CE07A7600CB7CA3 /* WeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherModel.m; sourceTree = "<group>"; };
-		0DD7BF781CE07ABD00CB7CA3 /* DailyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyModel.h; sourceTree = "<group>"; };
-		0DD7BF791CE07ABD00CB7CA3 /* DailyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyModel.m; sourceTree = "<group>"; };
+		0D8008661CED656800245181 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0D8008671CED656800245181 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		0D80086A1CED677100245181 /* DailyAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyAPI.h; sourceTree = "<group>"; };
+		0D80086B1CED677100245181 /* DailyAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyAPI.m; sourceTree = "<group>"; };
+		0D80086D1CED677100245181 /* LoadDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadDataHelper.h; sourceTree = "<group>"; };
+		0D80086E1CED677100245181 /* LoadDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadDataHelper.m; sourceTree = "<group>"; };
+		0D80086F1CED677100245181 /* NetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkHelper.h; sourceTree = "<group>"; };
+		0D8008701CED677100245181 /* NetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkHelper.m; sourceTree = "<group>"; };
+		0D8008721CED677100245181 /* GlobalConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConfig.h; sourceTree = "<group>"; };
+		0D8008751CED677100245181 /* DailyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyModel.h; sourceTree = "<group>"; };
+		0D8008761CED677100245181 /* DailyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyModel.m; sourceTree = "<group>"; };
+		0D8008781CED677100245181 /* WeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherModel.h; sourceTree = "<group>"; };
+		0D8008791CED677100245181 /* WeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherModel.m; sourceTree = "<group>"; };
+		0D80087B1CED677100245181 /* FacebookService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookService.h; sourceTree = "<group>"; };
+		0D80087C1CED677100245181 /* FacebookService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookService.m; sourceTree = "<group>"; };
+		0D80087D1CED677100245181 /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		0D80087E1CED677100245181 /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		0D80087F1CED677100245181 /* OneSignalService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneSignalService.h; sourceTree = "<group>"; };
+		0D8008801CED677100245181 /* OneSignalService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneSignalService.m; sourceTree = "<group>"; };
+		0D8008811CED677100245181 /* PushNotificationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationService.h; sourceTree = "<group>"; };
+		0D8008821CED677100245181 /* PushNotificationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationService.m; sourceTree = "<group>"; };
+		0D8008851CED677100245181 /* CityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableViewController.h; sourceTree = "<group>"; };
+		0D8008861CED677100245181 /* CityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewController.m; sourceTree = "<group>"; };
+		0D8008871CED677100245181 /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
+		0D8008881CED677100245181 /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
+		0D80088B1CED677100245181 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		0D80088C1CED677100245181 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		0D80088D1CED677100245181 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		0D80088E1CED677100245181 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		0D8008901CED677100245181 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		0D8008911CED677100245181 /* Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
+		0D8008921CED677100245181 /* Header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Header.xib; sourceTree = "<group>"; };
+		0D8008931CED677100245181 /* Hour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hour.h; sourceTree = "<group>"; };
+		0D8008941CED677100245181 /* Hour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hour.m; sourceTree = "<group>"; };
+		0D8008951CED677100245181 /* Hour.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Hour.xib; sourceTree = "<group>"; };
+		0D8008971CED677100245181 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0D8008981CED677100245181 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0D8008AC1CED682100245181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = EasyWeather/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		0DF170261CDC47DB005D1233 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		0DF170271CDC47DB005D1233 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		0DF170281CDC47DB005D1233 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -148,52 +148,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D4A4B191CDB42F70024D5C2 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				0DD7BF681CE064F900CB7CA3 /* PushNotificationService.h */,
-				0DD7BF691CE064F900CB7CA3 /* PushNotificationService.m */,
-				0DD7BF6B1CE0651C00CB7CA3 /* NetworkService.h */,
-				0DD7BF6C1CE0651C00CB7CA3 /* NetworkService.m */,
-				0DD7BF6E1CE0652D00CB7CA3 /* FacebookService.h */,
-				0DD7BF6F1CE0652D00CB7CA3 /* FacebookService.m */,
-				0D51FF4A1CE9C80A00C1BB01 /* OneSignalService.h */,
-				0D51FF4B1CE9C80A00C1BB01 /* OneSignalService.m */,
-			);
-			name = Services;
-			sourceTree = "<group>";
-		};
-		0D51F4EC1CE5884A007C41FE /* City */ = {
-			isa = PBXGroup;
-			children = (
-				0D76F7CA1CE58BF800EBAF76 /* CityTableViewController.h */,
-				0D76F7CB1CE58BF800EBAF76 /* CityTableViewController.m */,
-				0D76F7CF1CE58FF900EBAF76 /* SearchResultsTableViewController.h */,
-				0D76F7D01CE58FF900EBAF76 /* SearchResultsTableViewController.m */,
-			);
-			name = City;
-			sourceTree = "<group>";
-		};
-		0D5C8AFC1CE1B2FD0025A369 /* Commons */ = {
-			isa = PBXGroup;
-			children = (
-				0D6DE82E1CE31DD000E84CBC /* NetworkHelper.h */,
-				0D6DE82F1CE31DD000E84CBC /* NetworkHelper.m */,
-				0D36F57E1CE99BF100BC5EF3 /* LoadDataHelper.h */,
-				0D36F57F1CE99BF100BC5EF3 /* LoadDataHelper.m */,
-			);
-			name = Commons;
-			sourceTree = "<group>";
-		};
-		0D69B69F1CDAE3EF0039143E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				0DBD33C51CDAE84100180603 /* Weather */,
-				0DBD33C61CDAE85800180603 /* Daily */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		0D6D01491CD9E3B1009E942E = {
 			isa = PBXGroup;
 			children = (
@@ -219,14 +173,14 @@
 		0D6D01541CD9E3B2009E942E /* EasyWeather */ = {
 			isa = PBXGroup;
 			children = (
-				0D5C8AFC1CE1B2FD0025A369 /* Commons */,
-				0DD7BF631CE0649F00CB7CA3 /* API */,
-				0D4A4B191CDB42F70024D5C2 /* Services */,
-				0DBD33E01CDAF35600180603 /* Configs */,
-				0D69B69F1CDAE3EF0039143E /* Models */,
+				0D8008691CED677100245181 /* API */,
+				0D80086C1CED677100245181 /* Commons */,
+				0D8008711CED677100245181 /* Configs */,
+				0D8008731CED677100245181 /* Models */,
+				0D80087A1CED677100245181 /* Services */,
+				0D8008831CED677100245181 /* UI */,
 				0D6D01581CD9E3B2009E942E /* AppDelegate.h */,
 				0D6D01591CD9E3B2009E942E /* AppDelegate.m */,
-				0D6D01881CD9E3CD009E942E /* UI */,
 				0D6D01611CD9E3B2009E942E /* Assets.xcassets */,
 				0D6D01661CD9E3B2009E942E /* Info.plist */,
 				0D6D01551CD9E3B2009E942E /* Supporting Files */,
@@ -261,92 +215,138 @@
 			path = EasyWeatherUITests;
 			sourceTree = "<group>";
 		};
-		0D6D01881CD9E3CD009E942E /* UI */ = {
+		0D8008691CED677100245181 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				0D51F4EC1CE5884A007C41FE /* City */,
-				0D750FF01CDC2D8400C4FED5 /* Login */,
-				0D6D015E1CD9E3B2009E942E /* Main.storyboard */,
-				0D6D01981CDA00CA009E942E /* Home */,
+				0D80086A1CED677100245181 /* DailyAPI.h */,
+				0D80086B1CED677100245181 /* DailyAPI.m */,
 			);
-			name = UI;
+			path = API;
 			sourceTree = "<group>";
 		};
-		0D6D01911CD9EF4D009E942E /* Xib */ = {
+		0D80086C1CED677100245181 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
-				0D6D018C1CD9EB39009E942E /* Header.xib */,
-				0D6D019E1CDA1234009E942E /* Header.h */,
-				0D6D019F1CDA1234009E942E /* Header.m */,
-				0DD7BF5A1CE0489300CB7CA3 /* Hour.xib */,
-				0DD7BF5C1CE05EAE00CB7CA3 /* Hour.h */,
-				0DD7BF5D1CE05EAE00CB7CA3 /* Hour.m */,
+				0D80086D1CED677100245181 /* LoadDataHelper.h */,
+				0D80086E1CED677100245181 /* LoadDataHelper.m */,
+				0D80086F1CED677100245181 /* NetworkHelper.h */,
+				0D8008701CED677100245181 /* NetworkHelper.m */,
 			);
-			name = Xib;
+			path = Commons;
 			sourceTree = "<group>";
 		};
-		0D6D01981CDA00CA009E942E /* Home */ = {
+		0D8008711CED677100245181 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
-				0D6D01911CD9EF4D009E942E /* Xib */,
-				0DD985C71CDCA4300094ADF8 /* Cell */,
-				0D6D01891CD9E5A3009E942E /* HomeTableViewController.h */,
-				0D6D018A1CD9E5A3009E942E /* HomeTableViewController.m */,
+				0D8008721CED677100245181 /* GlobalConfig.h */,
 			);
-			name = Home;
+			path = Configs;
 			sourceTree = "<group>";
 		};
-		0D750FF01CDC2D8400C4FED5 /* Login */ = {
+		0D8008731CED677100245181 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0D750FF11CDC2DA600C4FED5 /* LoginViewController.h */,
-				0D750FF21CDC2DA600C4FED5 /* LoginViewController.m */,
+				0D8008741CED677100245181 /* Daily */,
+				0D8008771CED677100245181 /* Weather */,
 			);
-			name = Login;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		0DBD33C51CDAE84100180603 /* Weather */ = {
+		0D8008741CED677100245181 /* Daily */ = {
 			isa = PBXGroup;
 			children = (
-				0DD7BF751CE07A7600CB7CA3 /* WeatherModel.h */,
-				0DD7BF761CE07A7600CB7CA3 /* WeatherModel.m */,
+				0D8008751CED677100245181 /* DailyModel.h */,
+				0D8008761CED677100245181 /* DailyModel.m */,
 			);
-			name = Weather;
+			path = Daily;
 			sourceTree = "<group>";
 		};
-		0DBD33C61CDAE85800180603 /* Daily */ = {
+		0D8008771CED677100245181 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				0DD7BF781CE07ABD00CB7CA3 /* DailyModel.h */,
-				0DD7BF791CE07ABD00CB7CA3 /* DailyModel.m */,
+				0D8008781CED677100245181 /* WeatherModel.h */,
+				0D8008791CED677100245181 /* WeatherModel.m */,
 			);
-			name = Daily;
+			path = Weather;
 			sourceTree = "<group>";
 		};
-		0DBD33E01CDAF35600180603 /* Configs */ = {
+		0D80087A1CED677100245181 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0DD7BF711CE0661400CB7CA3 /* GlobalConfig.h */,
+				0D80087B1CED677100245181 /* FacebookService.h */,
+				0D80087C1CED677100245181 /* FacebookService.m */,
+				0D80087D1CED677100245181 /* NetworkService.h */,
+				0D80087E1CED677100245181 /* NetworkService.m */,
+				0D80087F1CED677100245181 /* OneSignalService.h */,
+				0D8008801CED677100245181 /* OneSignalService.m */,
+				0D8008811CED677100245181 /* PushNotificationService.h */,
+				0D8008821CED677100245181 /* PushNotificationService.m */,
 			);
-			name = Configs;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		0DD7BF631CE0649F00CB7CA3 /* API */ = {
+		0D8008831CED677100245181 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				0DD7BF721CE0788800CB7CA3 /* DailyAPI.h */,
-				0DD7BF731CE0788800CB7CA3 /* DailyAPI.m */,
+				0D8008AB1CED682100245181 /* Main.storyboard */,
+				0D8008841CED677100245181 /* City */,
+				0D8008891CED677100245181 /* Home */,
+				0D8008961CED677100245181 /* Login */,
 			);
-			name = API;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		0DD985C71CDCA4300094ADF8 /* Cell */ = {
+		0D8008841CED677100245181 /* City */ = {
 			isa = PBXGroup;
 			children = (
-				0D6D01921CD9F058009E942E /* HomeTableViewCell.h */,
-				0D6D01931CD9F058009E942E /* HomeTableViewCell.m */,
+				0D8008851CED677100245181 /* CityTableViewController.h */,
+				0D8008861CED677100245181 /* CityTableViewController.m */,
+				0D8008871CED677100245181 /* SearchResultsTableViewController.h */,
+				0D8008881CED677100245181 /* SearchResultsTableViewController.m */,
 			);
-			name = Cell;
+			path = City;
+			sourceTree = "<group>";
+		};
+		0D8008891CED677100245181 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0D80088A1CED677100245181 /* Cell */,
+				0D80088D1CED677100245181 /* HomeTableViewController.h */,
+				0D80088E1CED677100245181 /* HomeTableViewController.m */,
+				0D80088F1CED677100245181 /* Xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0D80088A1CED677100245181 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0D80088B1CED677100245181 /* HomeTableViewCell.h */,
+				0D80088C1CED677100245181 /* HomeTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0D80088F1CED677100245181 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				0D8008901CED677100245181 /* Header.h */,
+				0D8008911CED677100245181 /* Header.m */,
+				0D8008921CED677100245181 /* Header.xib */,
+				0D8008931CED677100245181 /* Hour.h */,
+				0D8008941CED677100245181 /* Hour.m */,
+				0D8008951CED677100245181 /* Hour.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		0D8008961CED677100245181 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0D8008971CED677100245181 /* LoginViewController.h */,
+				0D8008981CED677100245181 /* LoginViewController.m */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		2022537A14323BEDEE58AEF7 /* Pods */ = {
@@ -361,8 +361,8 @@
 		5C7C1F4B41EB8840F7C347E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0D5C8B0B1CE1D7100025A369 /* Reachability.h */,
-				0D5C8B0C1CE1D7100025A369 /* Reachability.m */,
+				0D8008661CED656800245181 /* Reachability.h */,
+				0D8008671CED656800245181 /* Reachability.m */,
 				0D5C8B091CE1D6DB0025A369 /* SystemConfiguration.framework */,
 				0DF170261CDC47DB005D1233 /* FBSDKCoreKit.framework */,
 				0DF170271CDC47DB005D1233 /* FBSDKLoginKit.framework */,
@@ -487,10 +487,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D6D01621CD9E3B2009E942E /* Assets.xcassets in Resources */,
-				0D6D018D1CD9EB39009E942E /* Header.xib in Resources */,
-				0D6D01601CD9E3B2009E942E /* Main.storyboard in Resources */,
+				0D8008AD1CED682100245181 /* Main.storyboard in Resources */,
+				0D8008A71CED677100245181 /* Header.xib in Resources */,
 				0D76F7D31CE5918900EBAF76 /* cityData.json in Resources */,
-				0DD7BF5B1CE0489300CB7CA3 /* Hour.xib in Resources */,
+				0D8008A91CED677100245181 /* Hour.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,25 +563,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DD7BF7A1CE07ABD00CB7CA3 /* DailyModel.m in Sources */,
-				0D76F7D11CE58FF900EBAF76 /* SearchResultsTableViewController.m in Sources */,
-				0D51FF4C1CE9C80A00C1BB01 /* OneSignalService.m in Sources */,
-				0DD7BF741CE0788800CB7CA3 /* DailyAPI.m in Sources */,
-				0DD7BF701CE0652D00CB7CA3 /* FacebookService.m in Sources */,
-				0D6DE8301CE31DD000E84CBC /* NetworkHelper.m in Sources */,
-				0D76F7CC1CE58BF800EBAF76 /* CityTableViewController.m in Sources */,
-				0DD7BF5E1CE05EAE00CB7CA3 /* Hour.m in Sources */,
-				0D5C8B0D1CE1D7100025A369 /* Reachability.m in Sources */,
+				0D80089C1CED677100245181 /* DailyModel.m in Sources */,
 				0D6D015A1CD9E3B2009E942E /* AppDelegate.m in Sources */,
-				0DD7BF6A1CE064F900CB7CA3 /* PushNotificationService.m in Sources */,
-				0D6D01941CD9F058009E942E /* HomeTableViewCell.m in Sources */,
-				0D6D018B1CD9E5A3009E942E /* HomeTableViewController.m in Sources */,
+				0D8008A41CED677100245181 /* HomeTableViewCell.m in Sources */,
+				0D8008A81CED677100245181 /* Hour.m in Sources */,
+				0D80089D1CED677100245181 /* WeatherModel.m in Sources */,
+				0D8008A51CED677100245181 /* HomeTableViewController.m in Sources */,
+				0D8008A61CED677100245181 /* Header.m in Sources */,
+				0D8008681CED656800245181 /* Reachability.m in Sources */,
+				0D8008A21CED677100245181 /* CityTableViewController.m in Sources */,
+				0D8008A11CED677100245181 /* PushNotificationService.m in Sources */,
+				0D8008A01CED677100245181 /* OneSignalService.m in Sources */,
+				0D80089F1CED677100245181 /* NetworkService.m in Sources */,
+				0D80089B1CED677100245181 /* NetworkHelper.m in Sources */,
+				0D8008991CED677100245181 /* DailyAPI.m in Sources */,
+				0D8008A31CED677100245181 /* SearchResultsTableViewController.m in Sources */,
+				0D8008AA1CED677100245181 /* LoginViewController.m in Sources */,
 				0D6D01571CD9E3B2009E942E /* main.m in Sources */,
-				0D6D01A01CDA1234009E942E /* Header.m in Sources */,
-				0D750FF31CDC2DA600C4FED5 /* LoginViewController.m in Sources */,
-				0D36F5801CE99BF100BC5EF3 /* LoadDataHelper.m in Sources */,
-				0DD7BF6D1CE0651C00CB7CA3 /* NetworkService.m in Sources */,
-				0DD7BF771CE07A7600CB7CA3 /* WeatherModel.m in Sources */,
+				0D80089A1CED677100245181 /* LoadDataHelper.m in Sources */,
+				0D80089E1CED677100245181 /* FacebookService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,10 +617,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0D6D015E1CD9E3B2009E942E /* Main.storyboard */ = {
+		0D8008AB1CED682100245181 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0D6D015F1CD9E3B2009E942E /* Base */,
+				0D8008AC1CED682100245181 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
