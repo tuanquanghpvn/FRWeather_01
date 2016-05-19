@@ -11,7 +11,7 @@
 #import "FacebookService.h"
 #import "LoginViewController.h"
 #import "OneSignalService.h"
-#import "DailyAPI.h"
+#import "PushNotificationService.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

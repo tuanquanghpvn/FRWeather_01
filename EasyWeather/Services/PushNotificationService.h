@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DailyAPI.h"
 
 @interface PushNotificationService : NSObject
 
