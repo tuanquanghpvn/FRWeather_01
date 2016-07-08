@@ -17,6 +17,7 @@
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         
         self.sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:url_base sessionConfiguration:configuration];
+        
         [self.sessionManager setRequestSerializer:[AFJSONRequestSerializer serializer]];
         [self.sessionManager setResponseSerializer:[AFJSONResponseSerializer serializer]];
     }
